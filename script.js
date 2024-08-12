@@ -21,8 +21,9 @@ function calc() {
                     txt.innerHTML = ans;
                     break;
                 case '=':
-                    txt.innerHTML = eval(ans);
-                    ans = '';
+                    let output = eval(ans)
+                    txt.innerHTML = output;
+                    ans = String(output);
                     break;
                 
                 default:
